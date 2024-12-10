@@ -1,0 +1,1299 @@
+:root {
+    --dark-slate-blue: #2C3E50;
+    --slate-gray-1: #496587;
+    --slate-gray-2: #3A506B;
+    --silver: #BDC3C7;
+    --bgsilver: rgba(189, 195, 199, 0.15);
+    --gold: #FFCC00;
+    --orange: #D35400;
+    --white: #FFFFFF;
+    --off-white: #F5F5F5;
+    --btn-blue: #3587CC;
+    --btn-hover: #007bff;
+}
+
+body {
+    background-image: linear-gradient(var(--slate-gray-1),var(--slate-gray-2));
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    color: var(--white);
+}
+
+/* navbar css starts */
+
+.navbar {
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: var(--dark-slate-blue);
+    border-radius: 0 0 50px 50px;
+    border-bottom: 3px solid var(--silver);
+}
+
+.navbar .logo-div {
+    width: fit-content;
+    height: 110px;
+    margin: auto;
+    margin-left: 50px;
+    display: flex;
+    align-items: end;
+}
+
+.navbar .logo, .login-logo {
+    font-size: 40px;
+    font-weight: bold;
+    background: -webkit-radial-gradient(var(--gold), var(--orange));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .links-div {
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: end;
+}
+
+.navbar .links-div a {
+    margin: 0 30px;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.navbar .links-div a:hover {
+    color: var(--orange);
+}
+
+.navbar .user-div {
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+    margin-right: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.navbar .user-icon {
+    width: auto;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.navbar .user-div .user {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* navbar css ends */
+
+/* employer css starts */
+
+.empspace {
+	max-width: 100%;
+	height: calc(100vh-100px);
+	max-height: calc(100vh-100px);
+	margin: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+.empspace .leftspace {
+	width: 65%;
+	height: auto;
+}
+
+.empspace .leftspace .heading, .jobsposted .heading {
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.job {
+	width: 90%;
+	height: auto;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	border: 1px solid var(--silver);
+	border-radius: 15px; 
+	background-color: var(--bgsilver);
+}
+
+.job .jobleft {
+	width: 40%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.jobleft .jobrole {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: .5px;
+}
+
+.jobleft .desc {
+	font-size: 14px;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.job .jobright {
+	width: 60%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.jobright .status {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.status .value {
+	display: flex;
+	flex-direction: column;
+}
+
+.value-head {
+	margin: 7px 10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: .5px;
+}
+
+.jobright .deadline {
+	max-width: 100%;
+	margin-right: 30px;
+	text-align: right;
+}
+
+.leftspace .viewall {
+	width: 90%;
+	height: auto;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.viewall a {
+	font-size: 16px;
+	text-decoration: none;
+	color: var(--btn-blue);
+}
+
+.empspace .leftspace .postjob {
+	width: 300px;
+	height: auto;
+	padding: 15px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 1px solid var(--silver);
+	border-radius: 15px; 
+	background-color: var(--bgsilver);
+}
+
+.postjob a {
+	color: var(--white);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.empspace .rightspace {
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.empspace .rightspace .acc-details, .mini-profile {
+	width: 80%;
+	max-width: 80%;
+	height: auto;
+	max-height: 300px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 1px solid var(--silver);
+	border-radius: 15px; 
+	background-color: var(--bgsilver);
+}
+
+.acc-details .details, .mini-profile .details {
+	line-height: 30px;
+}
+
+.acc-details .edit {
+	padding: 5px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.edit button {
+	width: 80px;
+	height: 30px;
+	cursor: pointer;
+	color: var(--white);
+	font-size: 16px;
+	border: none;
+	border-radius: 5px; 
+	background-color: var(--btn-blue);
+}
+
+.edit button:hover {
+    background-color: var(--btn-hover);
+}
+
+.jobsposted {
+	width: 100%;
+	max-width: 100%;
+	max-height: 570px;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.head-field {
+	max-width: 90%;
+	display: flex;
+	margin-left: 40px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.sort-field {
+	color: var(--white);
+	font-size: 18px;
+}
+
+.jobs {
+	width: 100%;
+	height: auto;
+	padding: 0 30px;
+	overflow: hidden;
+	overflow-y: auto; 
+}
+
+#update-profile {
+	width: 30rem;
+	box-sizing:border-box;
+}
+
+#update-profile::backdrop {
+	background-color: black;
+	opacity: .3;
+}
+
+#update-profile table td {
+	padding: 10px;
+	height: 30px;
+}
+
+.job-details {
+	width: 30%;
+	padding: 10px;
+	border-right: 1px solid var(--silver);
+}
+
+.app-list {
+	width: 50%;
+	border-right: 1px solid var(--silver); 
+}
+
+.app-list .counts {
+	padding: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.counts h3 {
+	margin: 0;
+}
+
+.counts span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.app-list .list {
+	height: 480px;
+	padding: 15px;
+	overflow: hidden;
+	overflow-y: auto; 
+}
+
+.list .application {
+	display: flex;
+	flex-direction: row;
+	padding: 15px;
+	border: 1px solid var(--silver);
+	border-radius: 10px;
+	background-color: var(--bgsilver);
+}
+
+.application .app-details {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px; 
+}
+
+.app-details .sname {
+	width: fit-content;
+	color: var(--white);
+	font-size: 20px;
+	font-weight: bold;	
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	transition: color .5s;
+}
+
+.app-details .sname:hover {
+	color: var(--gold);
+	cursor: pointer;
+}
+
+.list .actions {
+	width: 40%;
+	display: flex;
+}
+
+.post-job {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* employer css ends */
+
+/* pofficer css starts */
+
+#reg-stud {
+	width: 30rem;
+	box-sizing:border-box;
+}
+
+#reg-stud::backdrop {
+	background-color: black;
+	opacity: .3;
+}
+
+#reg-stud table td {
+	padding: 10px;
+	height: 30px;
+}
+
+.body-space {
+	width: 100vw;
+	height: 600px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.side-nav {
+	width: 250px;
+	height: auto;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin-top: 100px;
+}
+
+.side-nav .views {
+	width: 100%;
+	height: 40px;
+	border-right: 1px solid var(--silver);
+	border-bottom: 1px solid var(--silver);
+	padding: 0px 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.views:first-child {	
+	border-top: 1px solid var(--silver);
+}
+
+.side-nav a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.side-nav .views:hover {
+	color: var(--gold);
+	background-color: var(--bgsilver);
+}
+
+
+/* pofficer css ends */
+
+/* button css starts */
+
+.button {
+	width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--btn-blue);
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: var(--btn-hover);
+}
+
+dialog {
+	background-color: var(--slate-gray-1);
+	box-sizing:border-box;
+	border-radius: 15px; 
+	border: 1px solid var(--off-white);
+	color: var(--white);
+	padding: 40px;
+	outline: none;
+}
+
+dialog p {
+	margin: 0;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+label {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"], input[type="date"] {
+	width: 200px;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 5px 20px; 
+	color: var(--white);
+	caret-color: var(--white);
+	background-color: rgba(44, 62, 80, .3);
+	opacity: 1;
+	outline: none;
+	border: 1px solid var(--white);
+	border-radius: 7px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+select {
+	width: 200px;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 5px 20px; 
+	color: var(--white);
+	caret-color: var(--white);
+	background-color: rgba(44, 62, 80, .3);
+	opacity: 1;
+	outline: none;
+	border: 1px solid var(--white);
+	border-radius: 7px;
+}
+
+/* button css ends */
+
+/* dropdown css starts */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--silver);
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: var(--btn-blue);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover { 
+  	color: var(--orange);
+  }
+
+  .dropdown:hover .dropdown-content { 
+    display: block; 
+  }
+  
+  .dropdown:hover button { 
+  	background-color: transparent; 
+  }
+
+/* dropdown css ends */
+
+/* login page css starts */
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.login-head {
+	width: 700px;
+	height: 700px;
+	border-radius: 150px;
+	background-color: var(--dark-slate-blue);
+	opacity: .7;
+	position: absolute;
+	top: -650px;
+	left: -240px;
+	rotate: 45deg;
+}
+
+.login-logo {
+	font-size: 30px;
+	position: absolute;
+	top: 0;
+	left: 25px;
+}
+
+.login-form, .regist-form {
+	position: absolute;
+	left: 25%;
+}
+
+.login-form form, .regist-form from {
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-form input[type="text"],.login-form input[type="password"] {
+	width: 200px;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 5px 20px; 
+	color: var(--white);
+	caret-color: var(--white);
+	background-color: rgba(44, 62, 80, .3);
+	opacity: 1;
+	outline: none;
+	border: 1px solid var(--white);
+	border-radius: 7px;
+}
+
+.login-form input[type="text"]::placeholder,.login-form input[type="password"]::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+.regist-form input[type="text"],.regist-form input[type="password"],.regist-form input[type="number"],.regist-form select {
+	width: 250px;
+	height: 40px;
+	margin: 5px;
+	box-sizing: border-box;
+	padding: 5px 20px; 
+	color: var(--white);
+	caret-color: var(--white);
+	background-color: rgba(44, 62, 80, .3);
+	opacity: 1;
+	outline: none;
+	border: 1px solid var(--white);
+	border-radius: 7px;
+}
+
+.regist-form input[type="text"]::placeholder,.regist-form input[type="password"]::placeholder,.regist-form input[type="number"]::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+.login-form input[type="submit"] {
+	width: 200px;
+	height: 40px;
+	font-weight: bold;
+	box-sizing: border-box;
+	background-color: var(--white);
+	color: var(--btn-blue);
+	outline: none;
+	border: 1px solid var(--white);
+	border-radius: 7px;
+	cursor: pointer;
+	transition: background-color 1s, color 1s;
+}
+
+.login-form input[type="submit"]:hover,.regist-form input[type="submit"]:hover {
+	background-color: transparent;
+	color: var(--white);
+}
+
+.regist-form input[type="submit"] {
+	width: 250px;
+	height: 40px;
+	margin: 5px;
+	font-weight: bold;
+	box-sizing: border-box;
+	background-color: var(--white);
+	color: var(--btn-blue);
+	outline: none;
+	border: 1px solid var(--white);
+	border-radius: 7px;
+	cursor: pointer;
+	transition: background-color 1s, color 1s;
+}
+
+.regist-form input[type="submit"]:hover {
+	background-color: transparent;
+	color: var(--white);
+}
+
+.login-empty {
+	width: 1000px;
+	height: 1000px;
+	border-radius: 150px;
+	background-color: var(--dark-slate-blue);
+	opacity: .7;
+	position: absolute;
+	top: -50px;
+	right: -450px;
+	rotate: 45deg;
+} 
+
+.word-span {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	right: 15%;
+	bottom: 35%;
+}
+
+.itim-regular {
+  font-family: "Itim", serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  color: var(--white);
+}
+
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  color: var(--white);
+}
+
+/* login page css ends */
+
+/* student css starts */
+
+.student-body {
+	max-height: 85%;
+	margin: 10px;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.sort-box {
+	width: 20%;
+}
+
+.main-box {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.head-box {
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.job-box {
+	height: 550px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.job-box::-webkit-scrollbar {
+    display: none;  
+}
+
+.job-view {
+	width:300px;
+	height:250px;
+	display:flex;
+	flex-direction: column;
+	justify-content:space-around;
+	border: 1px solid var(--silver);
+	border-radius: 15px;
+	box-sizing: border-box;
+	padding: 15px;
+	background-color: var(--bgsilver);
+}
+
+.job-view h3 {
+	margin: 0;
+}
+
+.profile-box {
+	width: 35%;
+	padding: 15px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
+.mini-profile {
+	width: 100%;
+	height: fit-content;
+	max-height: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	 
+}
+
+.mini-profile .details {
+	width: fit-content;
+}
+
+.mini-profile .details a {
+	line-height: 40px;
+	color: var(--white);
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.mini-profile .details i {
+	font-size: 20px;
+}
+
+.profile {
+	margin-right: 3%;
+}
+
+.profile img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%; 
+}
+
+#stud-profile {
+	box-sizing:border-box;
+	width: 50%;
+	padding: 0;
+	position: relative;
+	top: 20px;
+	right: -700px;
+}
+
+#stud-profile::backdrop {
+	background-color: black;
+	opacity: .1;
+}
+
+.view-profile {
+	padding: 25px;
+	padding-bottom: 0px;
+	border: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.view-profile table td {
+	padding: 5px;
+}
+
+.view-profile table td:nth-child(odd) {
+	width: 120px;
+	align-content: flex-start;
+}
+
+.view-profile table td:nth-child(even) {
+	width: 250px;
+}
+
+.view-profile .image {
+	padding-top: 35px;
+}
+
+.view-profile img {
+	width: 250px;
+	height: 250px;
+	border-radius: 15px;
+}
+
+.edu-profile {
+	padding: 25px;
+	padding-top: 0px;
+	border: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.edu-profile table td {
+	padding: 5px;
+	width: 120px;
+}
+
+.edu-profile table td:nth-child(even) {
+	width: 200px;
+}
+
+.container {
+	width: 85%;
+	margin: 1cm;
+	padding: 1cm;
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-evenly;
+}
+
+.container .details table td:nth-child(odd), .job-details .details table td:nth-child(odd) {
+	width: 120px;
+	height: 30px;
+	align-content: flex-start;
+}
+
+.container .details table td:nth-child(even), .job-details .details table td:nth-child(even) {
+	width: 300px;
+	height: 30px;
+	align-content: flex-start;
+}
+
+.container .criteria table {
+	margin: 50px; 
+}
+
+.container .criteria table td {
+	width: 150px;
+	height: 30px;
+	align-content: flex-start;
+}
+
+.role {
+	height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.apply {
+	height: 70px;
+	text-align: center;
+}
+
+/* student css ends */
+
+/* admin css starts */
+
+.admin-space {
+	height: 85%;
+	padding: 1cm;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.boxes {
+	width: 62%;
+	max-height: fit-content;
+	padding: .5cm;
+	display: flex;
+	justify-content: inherit;
+	flex-wrap: wrap;
+	gap: 50px;
+	box-sizing: border-box;
+}
+
+.view-box {
+	width: 250px;
+	height: 150px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 1px solid var(--silver);
+	border-radius: 10px;
+	background-color: var(--bgsilver);
+}
+
+.view-box .button {
+	width: fit-content;
+	padding: 10px 30px;
+}
+
+.view-detail {
+	width: auto;
+	height: 40%;
+	align-content: center;
+}
+
+.view-detail i {
+	font-size: 30px;
+	padding: 0 15px;
+}
+
+.view-detail span {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.view-bottom {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	height: 60%;
+}
+
+.view-count {
+	width: 50%;
+	align-content: center;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bolder;
+}
+
+.view-btn {
+	width: 50%;
+	align-content: flex-end;
+	text-align: right;
+}
+
+.stats {
+	width: 35%;
+	padding: .5cm;
+	box-sizing: border-box;
+}
+
+.stats .container {
+	width: 90%;
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bgsilver);
+	border: 1px solid var(--silver);
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+.stats .heading {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1cm;
+}
+
+.stat-values {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.stat-values .each {
+	margin: 5px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.each span {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#reg-po {
+	width: 30rem;
+	box-sizing:border-box;
+}
+
+#reg-po::backdrop {
+	background-color: black;
+	opacity: .3;
+}
+
+#reg-po table td {
+	padding: 10px;
+	height: 30px;
+}
+
+.task-space {
+	margin: auto;
+	margin-top: 1cm;
+	width: 80%;
+	box-sizing: border-box;
+	max-height: 600px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+ .headline {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.page-task {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.page-task .employee {
+	padding: 10px;
+	display: flex;
+	flex-direction: column; 
+	background-color: var(--bgsilver);
+	border: 1px solid var(--silver);
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.task-space .top {
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+
+.top .name {
+	width: 65%;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.top .gender-contact {
+	display: flex;
+	flex-direction: column;
+	line-height: 25px;
+}
+
+.task-space .bottom {
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+
+.bottom .mail-company {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	line-height: 25px;	
+}
+
+.bottom .status {
+	width: 50%;
+	max-width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.status a, .view {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--btn-blue);
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.list-view {
+	width: 25%;
+	height: fit-content;
+	max-height: 595px; 
+	box-sizing: border-box;
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.list-view .student {
+	padding: 10px;
+	display: flex;
+	flex-direction: column; 
+	background-color: var(--bgsilver);
+	border: 1px solid var(--silver);
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.student .sname {
+	padding: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.detailed-view {
+	margin-right: 100px;
+	justify-content: center;
+}
+
+.app-table {
+	width: 100%;
+	align-self: center;
+	border-collapse: collapse;
+	border-radius: 12px; 
+	overflow: hidden;
+}
+
+.app-table thead {
+	background-color: var(--dark-slate-blue);
+}
+
+.app-table tbody{
+	background-color: var(--bgsilver);
+}
+
+.app-table tbody tr {
+	height: 50px;
+	transition: height .5s;
+}
+
+.app-table tbody tr:hover {
+	height: 60px;
+}
+
+.app-table td {
+	min-width: 150px;
+	height: 50px;
+	text-align: center;
+}
+
+.app-table .button {
+	width: fit-content;
+}
+
+.chngpwd-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chngpwd {
+	width: fit-content;
+	height: 220px;
+	padding: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid var(--silver);
+	border-radius: 20px;
+	background-color: var(--bgsilver);
+}
+
+.stud-form {
+	width: fit-content;
+	height: auto;
+	padding: 2%;
+	padding-left: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid var(--silver);
+	border-radius: 20px;
+	background-color: var(--bgsilver);
+}
+
+.stud-form h3 {
+	margin: 5px;
+}
+
+textarea {
+	width: 200px;
+	height: 60px;
+	box-sizing: border-box;
+	padding: 5px 20px; 
+	color: var(--white);
+	caret-color: var(--white);
+	background-color: rgba(44, 62, 80, .3);
+	opacity: 1;
+	outline: none;
+	border: 1px solid var(--white);
+	border-radius: 7px;
+}
+
+/* admin css ends */
+
+.contact {
+	align-self: center;
+	justify-content: center;
+}
+
+
